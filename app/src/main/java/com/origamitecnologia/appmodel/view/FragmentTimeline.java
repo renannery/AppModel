@@ -1,6 +1,10 @@
 package com.origamitecnologia.appmodel.view;
 
 import android.content.res.Configuration;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 
 import com.origamitecnologia.appmodel.R;
@@ -15,8 +19,11 @@ import io.realm.Realm;
 import io.realm.RealmQuery;
 
 public class FragmentTimeline extends BaseFragment {
+    public static final int NAVIGATION_DRAWER = 0;
+    public static final int NAVIGATION_BACK = 1;
 
     private AdapterTimeline adapterTimeline;
+    private int navigationType;
 
     @InjectView(R.id.crvTimeline)
     CustomRecyclerView crvTimeline;
@@ -28,6 +35,10 @@ public class FragmentTimeline extends BaseFragment {
 
     @Override
     public void doOnCreated(View view) {
+        Toolbar toolbar = (Toolbar) view.findViewById(R.id.toolbar);
+        ((ActionBarActivity) getActivity()).setSupportActionBar(toolbar);
+        ((ActionBarActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         Realm realm = Realm.getInstance(getActivity());
         RealmQuery<Movie> query = realm.where(Movie.class);
 
@@ -37,7 +48,11 @@ public class FragmentTimeline extends BaseFragment {
         adapterTimeline.setOnItemClickListener(new OnItemClickListener() {
             @Override
             public void onClickItem(View view, long id) {
-                CallManager.getInstance().fragmentNotification(id);
+                getActivity().getSupportFragmentManager()
+                        .beginTransaction()
+                        .addToBackStack(null)
+                        .replace(R.id.flMainContent, CallManager.fragmentNotification(id))
+                        .commit();
             }
         });
     }

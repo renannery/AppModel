@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
@@ -55,7 +56,7 @@ public abstract class BaseActivity extends ActionBarActivity {
         setContentView(layoutToInflate());
         ButterKnife.inject(this);
         fragmentManager = getSupportFragmentManager();
-        CallManager.getInstance().setActivity(this);
+//        CallManager.getInstance().setActivity(this);
         setToolbar();
         setDrawer();
 

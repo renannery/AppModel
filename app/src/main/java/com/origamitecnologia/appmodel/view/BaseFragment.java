@@ -24,7 +24,7 @@ public abstract class BaseFragment extends Fragment {
         ButterKnife.inject(this, view);
         setToolbar(view);
 
-        manageDrawer();
+//        manageDrawer();
 
         if(savedInstanceState != null) {
             doOnStateRestored(savedInstanceState);
@@ -39,7 +39,7 @@ public abstract class BaseFragment extends Fragment {
     private void setToolbar(View view) {
         toolbar = (Toolbar) view.findViewById(R.id.toolbar);
         if(toolbar != null) {
-            getBaseActivity().setToolbar(toolbar);
+//            getBaseActivity().setToolbar(toolbar);
         }
     }
 
@@ -48,13 +48,13 @@ public abstract class BaseFragment extends Fragment {
 
     protected abstract boolean isDrawerLocked();
 
-    private void manageDrawer() {
-        if(isDrawerLocked()) {
-            getBaseActivity().lockDrawer();
-        } else {
-            getBaseActivity().unlockDrawer();
-        }
-    }
+//    private void manageDrawer() {
+//        if(isDrawerLocked()) {
+//            getBaseActivity().lockDrawer();
+//        } else {
+//            getBaseActivity().unlockDrawer();
+//        }
+//    }
 
     protected void doOnStateRestored(Bundle savedInstanceState) { }
     protected void doOnWithoutRestore() { }
@@ -66,7 +66,7 @@ public abstract class BaseFragment extends Fragment {
         return toolbar;
     }
 
-    protected BaseActivity getBaseActivity() {
-        return CallManager.getInstance().getActivity();
-    }
+//    protected BaseActivity getBaseActivity() {
+//        return CallManager.getInstance().getActivity();
+//    }
 }

@@ -83,7 +83,7 @@ public class ActivityLogin extends BaseActivity {
     }
 
     private void goToMainScreen() {
-        CallManager.getInstance().activityMain();
+        startActivity(CallManager.main(this));
         finish();
     }
 

@@ -17,62 +17,43 @@ import com.origamitecnologia.appmodel.view.FragmentTimeline;
 
 public class CallManager {
 
-    private static CallManager instance;
-    private BaseActivity activity;
-    private SharedPreferences sharedPreferences;
+    private static SharedPreferences sharedPreferences;
 
-    private CallManager() {
-
-    }
-
-    public void setActivity(BaseActivity activity) {
-        this.activity = activity;
-    }
-
-    public BaseActivity getActivity() {
-        return activity;
-    }
-
-    public static CallManager getInstance() {
-        if(instance == null) {
-            instance = new CallManager();
-        }
-        return instance;
-    }
-
-    public void activityLogin() {
-        sharedPreferences = activity.getSharedPreferences(ActivityLogin.USER_LOGED_PREFERENCES, Context.MODE_PRIVATE);
+    public static final Intent login(Context context) {
+        sharedPreferences = context.getSharedPreferences(ActivityLogin.USER_LOGED_PREFERENCES, Context.MODE_PRIVATE);
         sharedPreferences.edit().putLong(ActivityLogin.USER_LOGED_ID, ActivityLogin.USER_LOGED_NO_USER).putBoolean(ActivityLogin.USER_LOGED_VALIDATION, false).commit();
-        Intent intent = new Intent(activity, ActivityLogin.class);
+        Intent intent = new Intent(context, ActivityLogin.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
-        activity.startActivity(intent);
+        return intent;
     }
 
-    public void activityMain() {
-        sharedPreferences = activity.getSharedPreferences(ActivityLogin.USER_LOGED_PREFERENCES, Context.MODE_PRIVATE);
+    public static final Intent main(Context context) {
+        sharedPreferences = context.getSharedPreferences(ActivityLogin.USER_LOGED_PREFERENCES, Context.MODE_PRIVATE);
         String username = sharedPreferences.getString(ActivityLogin.USER_LOGED_ID, ActivityLogin.USER_LOGED_NO_USER_STRING);
-        User user = UserValidator.getInstance().getUserByUsername(activity.getApplication(), username);
+        User user = UserValidator.getInstance().getUserByUsername(context, username);
         SessionManager.getInstance().setCurrentUser(user);
-        activity.startActivity(new Intent(activity, ActivityMain.class));
+        return new Intent(context, ActivityMain.class);
     }
 
-    public void activityProfile() {
-        activity.startActivity(new Intent(activity, ActivityProfile.class));
+    public static final Intent profile(Context context) {
+        return new Intent(context, ActivityProfile.class);
     }
 
-    public void fragmentTimeline() {
-        activity.setFragment(new FragmentTimeline(), false);
+    public static final Fragment fragmentTimeline() {
+        Fragment fragment = new FragmentTimeline();
+        return fragment;
     }
 
-    public void fragmentCreateNotification() {
-        activity.setFragment(new FragmentCreateNotification(), true);
+    public static final Fragment fragmentCreateNotification() {
+        Fragment fragment = new FragmentCreateNotification();
+        return fragment;
     }
 
-    public void fragmentNotification(long id) {
+    public static final Fragment fragmentNotification(long id) {
         Fragment fragment = new FragmentNotification();
         Bundle bundle = new Bundle();
         bundle.putLong(FragmentNotification.BUNDLE_NOTIFICATION_ID, id);
         fragment.setArguments(bundle);
-        activity.setFragment(fragment, true);
+        return fragment;
     }
 }

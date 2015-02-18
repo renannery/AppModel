@@ -1,9 +1,8 @@
 package com.origamitecnologia.appmodel.view;
 
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -27,6 +26,8 @@ public class ActivityMain extends BaseActivity {
     private static final int OPTION_CREATE_NOTIFICATION = 1;
     private static final int OPTION_LOGOFF = 2;
 
+    private DrawerLayout drawerLayout;
+
     @InjectView(R.id.ivMainUserPhoto)
     ImageView ivMainUserPhoto;
 
@@ -38,9 +39,7 @@ public class ActivityMain extends BaseActivity {
 
     @OnClick(R.id.llMainUserProfile)
     public void onProfileClick() {
-        Intent myIntent = new Intent(ActivityMain.this, ActivityProfile.class);
-        startActivity(myIntent);
-//        CallManager.getInstance().activityProfile();
+        startActivity(CallManager.profile(this));
     }
 
     @Override
@@ -50,7 +49,7 @@ public class ActivityMain extends BaseActivity {
 
     @Override
     protected void doOnFirstTime() {
-        CallManager.getInstance().fragmentTimeline();
+        setFragment(CallManager.fragmentTimeline(), false);
     }
 
     @Override
@@ -82,26 +81,23 @@ public class ActivityMain extends BaseActivity {
     }
 
     private void redirectToLogin() {
-        CallManager.getInstance().activityLogin();
-    }
-
-    private void openCreateNotification() {
-        CallManager.getInstance().fragmentCreateNotification();
+        startActivity(CallManager.login(this));
+        finish();
     }
 
     private void defineOnOptionSelected(int position) {
-        closeDrawer();
         switch(position) {
             case OPTION_TIMELINE:
                 resetToHomeFragment();
                 break;
             case OPTION_CREATE_NOTIFICATION:
-                openCreateNotification();
+                setFragment(CallManager.fragmentCreateNotification(), true);
                 break;
             case OPTION_LOGOFF:
                 redirectToLogin();
                 break;
         }
+        closeDrawer();
     }
 
     @Override
