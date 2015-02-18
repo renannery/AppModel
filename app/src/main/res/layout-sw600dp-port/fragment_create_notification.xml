@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llCreateNotification"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:id="@+id/llCreateNotificationContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ScrollView
+            android:id="@+id/svNotificationDetails"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:overScrollMode="never"
+            android:fillViewport="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/primary_dark">
+
+                    <TextView
+                        style="@style/Base.Body2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/XXLarge"
+                        android:textColor="@color/text_light"
+                        android:layout_marginLeft="@dimen/notification_text_margin"
+                        android:text="@string/create_notification_title"/>
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/metNotificationName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:baseColor="@color/text_normal"
+                        app:primaryColor="@color/text_light"
+                        android:textColorHint="@color/text_normal"
+                        app:floatingLabel="highlight"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:textSize="@dimen/Large"
+                        android:hint="@string/create_notification_name_hint"
+                        android:layout_marginLeft="@dimen/notification_text_margin"
+                        android:layout_marginRight="@dimen/default_edit_text_margin_left_right"
+                        android:layout_marginTop="@dimen/default_edit_text_margin_top_bottom"
+                        android:layout_marginBottom="@dimen/default_edit_text_margin_top_bottom"
+                        app:maxCharacters="30"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llNotificationDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/notification_multiline_height"
+                    android:background="@color/primary_background"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/default_icon_size"
+                        android:layout_height="@dimen/default_icon_size"
+                        android:layout_margin="@dimen/default_icon_margin"
+                        android:src="@drawable/ic_description"/>
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/metNotificationDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:baseColor="@color/primary_dark"
+                        app:primaryColor="@color/primary"
+                        app:floatingLabel="highlight"
+                        android:ellipsize="end"
+                        android:hint="@string/create_notification_description_hint"
+                        android:layout_marginTop="@dimen/default_edit_text_margin_top_bottom"
+                        android:layout_marginBottom="@dimen/default_edit_text_margin_top_bottom"
+                        android:layout_marginRight="@dimen/default_edit_text_margin_left_right"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llNotificationType"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/notification_line_height"
+                    android:orientation="horizontal"
+                    android:background="@drawable/background_to_accent_button">
+
+                    <ImageView
+                        android:layout_width="@dimen/default_icon_size"
+                        android:layout_height="@dimen/default_icon_size"
+                        android:layout_margin="@dimen/default_icon_margin"
+                        android:src="@drawable/ic_flag"/>
+
+                    <TextView
+                        style="@style/Base.Body2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/Normal"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/create_notification_type_title"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llNotificationTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/notification_line_height"
+                    android:orientation="horizontal"
+                    android:background="@drawable/background_to_accent_button">
+
+                    <ImageView
+                        android:layout_width="@dimen/default_icon_size"
+                        android:layout_height="@dimen/default_icon_size"
+                        android:layout_margin="@dimen/default_icon_margin"
+                        android:src="@drawable/ic_alarm"/>
+
+                    <TextView
+                        style="@style/Base.Body2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/Normal"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/create_notification_time_title"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <FrameLayout
+            android:id="@+id/flEditContainer"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_alignParentBottom="true"
+            android:alpha="0" >
+
+            <com.squareup.timessquare.CalendarPickerView
+                android:id="@+id/calendar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,50 @@
+[
+    {
+        "id": 0,
+        "firstName": "Henrique",
+        "lastName": "Melissopoulos Feliciano",
+        "photo": "henrique.jpg",
+        "about": "Meu nome é Henrique Melissopoulos e sou grego. :D",
+        "gender": 1,
+        "username": "hmelissopoulos",
+        "password": "123456",
+        "email": "hmelissopoulos@email.com",
+        "phone": "551155555555"
+    },
+    {
+        "id": 1,
+        "firstName": "Pedro",
+        "lastName": "Okawa",
+        "photo": "pedro.jpg",
+        "about": "Pedro Okawa. :D",
+        "gender": 1,
+        "username": "pokawa",
+        "password": "123456",
+        "email": "pokawa@email.com",
+        "phone": "551166666666"
+    },
+    {
+        "id": 2,
+        "firstName": "Renan",
+        "lastName": "Nery Oliveira",
+        "photo": "renan.jpg",
+        "about": "Sou o Renan Nery. :D",
+        "gender": 1,
+        "username": "rnery",
+        "password": "123456",
+        "email": "rnery@email.com",
+        "phone": "551177777777"
+    },
+    {
+        "id": 3,
+        "firstName": "Disk",
+        "lastName": "Cacoal",
+        "photo": "diskcacoal.png",
+        "about": "Cliente Disk Cacoal",
+        "gender": 1,
+        "username": "cacoal",
+        "password": "123456",
+        "email": "disk@cacoal.com",
+        "phone": "551188888888"
+    }
+]

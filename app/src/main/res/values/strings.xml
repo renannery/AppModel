@@ -1,0 +1,56 @@
+<resources>
+    <!-- APPLICATION NAME -->
+    <string name="app_name">App Model V.2</string>
+
+    <!-- SERVER CENTRAL CLASS -->
+    <string name="image_server_path">https://dl.dropboxusercontent.com/u/77330652/Android/AppModel/Images/</string>
+
+    <!-- LOGIN FRAGMENT -->
+    <string name="login_fragment_title">LOGIN</string>
+    <string name="login_fragment_username_hint">Username</string>
+    <string name="login_fragment_password_hint">Password</string>
+    <string name="login_fragment_button_text">ACCESS</string>
+    <string name="login_edit_text_message_error">Fill out the field correctly!</string>
+    <string name="login_crouton_message_error">User or/and password do not match!</string>
+
+    <!-- CREATE NOTIFICATION FRAGMENT -->
+    <string name="create_notification_title">Notification</string>
+    <string name="create_notification_name_hint">Name</string>
+    <string name="create_notification_description_hint">Description</string>
+    <string name="create_notification_type_title">Type of the notification</string>
+    <string name="create_notification_time_title">Period of the notification</string>
+
+    <!-- MAIN ACTIVITY -->
+    <string-array name="main_activity_user_options">
+        <item>Timeline</item>
+        <item>Create notification</item>
+        <item>Logoff</item>
+    </string-array>
+
+    <!-- PROFILE ACTIVITY -->
+    <string name="profile_activity_first_name_hint">First Name</string>
+    <string name="profile_activity_last_name_hint">Last Name</string>
+    <string name="profile_activity_about_hint">About</string>
+    <string name="profile_activity_gender_title">Gender</string>
+
+    <string-array name="profile_activity_gender_options">
+        <item>@string/profile_activity_gender_female</item>
+        <item>@string/profile_activity_gender_male</item>
+    </string-array>
+
+    <string name="profile_activity_gender_male">Male</string>
+    <string name="profile_activity_gender_female">Female</string>
+
+    <string name="profile_activity_new_username_hint">Username</string>
+    <string name="profile_activity_new_password_hint">New password</string>
+    <string name="profile_activity_confirm_new_password_hint">Confirm password</string>
+
+    <string name="profile_activity_email_hint">Email</string>
+    <string name="profile_activity_phone_hint">Phone</string>
+
+    <string name="profile_activity_button_text">SAVE CHANGES</string>
+
+    <!-- NOTIFICATION ACTIVITY -->
+    <string name="Notification_activity_name_hint">Notification name</string>
+    <string name="Notification_activity_description_hint">Notification description</string>
+</resources>

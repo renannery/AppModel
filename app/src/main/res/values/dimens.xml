@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- DIVIDER -->
+    <dimen name="default_divider_margin">5dp</dimen>
+    <dimen name="default_divider_height">1dp</dimen>
+
+    <!-- CARD -->
+    <dimen name="default_card_margin">10dp</dimen>
+    <dimen name="default_card_height">200dp</dimen>
+    <dimen name="default_card_image_height_phone">200dp</dimen>
+    <dimen name="default_card_image_height_tablet_port">300dp</dimen>
+    <dimen name="default_card_image_height_tablet_land">400dp</dimen>
+
+    <!-- LOGIN CARD -->
+    <dimen name="login_card_width">400dp</dimen>
+
+    <!-- LINEAR LAYOUT -->
+    <dimen name="default_linear_layout_margin">10dp</dimen>
+    <dimen name="default_linear_layout_drawer_width">320dp</dimen>
+
+    <!-- ICON -->
+    <dimen name="default_icon_size">40dp</dimen>
+    <dimen name="default_icon_margin">16dp</dimen>
+
+    <!-- PROFILE LINEAR LAYOUT -->
+    <dimen name="profile_linear_layout_width">700dp</dimen>
+
+    <!-- EDIT TEXT -->
+    <dimen name="default_edit_text_margin_top_bottom">5dp</dimen>
+    <dimen name="default_edit_text_margin_left_right">10dp</dimen>
+
+    <!-- TEXT VIEW -->
+    <dimen name="default_text_view_margin">10dp</dimen>
+
+    <!-- SPINNER -->
+    <dimen name="default_spinner_margin">10dp</dimen>
+
+    <!-- BUTTON -->
+    <dimen name="default_button_margin">10dp</dimen>
+
+    <!-- USER IMAGE -->
+    <dimen name="user_image_margin">20dp</dimen>
+    <dimen name="user_image_size_phone">100dp</dimen>
+    <dimen name="user_image_size_tablet">180dp</dimen>
+
+    <!-- PARALLAX IMAGE -->
+    <dimen name="parallax_header_image_height_phone">300dp</dimen>
+    <dimen name="parallax_header_image_height_tablet">600dp</dimen>
+
+    <!-- GRADIENT HEADER (TABLET) -->
+    <dimen name="gradient_header_image_height">200dp</dimen>
+
+    <!-- NOTIFICATION CREATION -->
+    <dimen name="notification_icon_margin">16dp</dimen>
+    <dimen name="notification_text_margin">72dp</dimen>
+    <dimen name="notification_line_height">72dp</dimen>
+    <dimen name="notification_multiline_height">144dp</dimen>
+
+    <!-- TEXT SIZES -->
+    <dimen name="XXXXLarge">112sp</dimen>
+    <dimen name="XXXLarge">56sp</dimen>
+    <dimen name="XXLarge">45sp</dimen>
+    <dimen name="XLarge">34sp</dimen>
+    <dimen name="Large">24sp</dimen>
+    <dimen name="Normal">20sp</dimen>
+    <dimen name="BodyLarge">16sp</dimen>
+    <dimen name="BodyNormal">14sp</dimen>
+    <dimen name="BodySmall">12sp</dimen>
+</resources>

@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "userId": 1,
+        "title": "Reservoir Dogs",
+        "description": "Reservoir Dogs is a 1992 American ensemble crime film that depicts the events before and after a botched diamond heist. The film was the debut of director and writer Quentin Tarantino, and stars Harvey Keitel, Tim Roth, Chris Penn, Steve Buscemi, Lawrence Tierney, and Michael Madsen. Tarantino and criminal-turned-author Edward Bunker have minor roles. It incorporates many themes that have become Tarantino's hallmarks—violent crime, pop culture references, profanity, and a nonlinear storyline.\n\nThe film has become a classic of independent film and a cult hit.[4] It was named \"Greatest Independent Film of all Time\" by Empire magazine. Reservoir Dogs was generally well received, and the cast was praised by many critics. Although it was not given much promotion upon release, the film became a modest success in the United States after grossing $2,832,029, recouping its $1.2 million budget. The film was more successful in the United Kingdom, grossing nearly £6.5 million, and it achieved higher popularity after the success of Tarantino's next directorial effort, Pulp Fiction. A soundtrack titled Reservoir Dogs: The Original Motion Picture Soundtrack was released featuring songs used in the film, which are mostly from the 1970s.",
+        "photo": "reservoir_dogs.jpg"
+    },
+    {
+        "id": 2,
+        "userId": 2,
+        "title": "Scarface",
+        "description": "Scarface is a 1983 American crime drama film directed by Brian De Palma and written by Oliver Stone. A remake of the 1932 film of the same name, Scarface tells the story of Cuban refugee Tony Montana (Al Pacino) who arrives in 1980s Miami with nothing, and rises up to become a powerful drug kingpin. The film also features Mary Elizabeth Mastrantonio, Steven Bauer, and Michelle Pfeiffer.\n\nThe initial critical response to Scarface was mixed, with criticism over excessive violence, frequent strong language and graphic hard drug usage. Some Cuban expatriates in Miami objected to the film's portrayal of Cubans as criminals and drug traffickers. Later reviews have been more positive, and screenwriters and directors such as Martin Scorsese have praised the movie. It is now considered a classic within the mob film genre and has resulted in many cultural references such as in comic books and video games.",
+        "photo": "scarface.jpg"
+    },
+    {
+        "id": 3,
+        "userId": 3,
+        "title": "The Godfather",
+        "description": "The Godfather is a 1972 American crime film directed by Francis Ford Coppola and produced by Albert S. Ruddy from a screenplay by Mario Puzo and Coppola. Starring Marlon Brando and Al Pacino as the leaders of a fictional New York crime family, the story spans the years 1945-55, centering on the transformation of Michael Corleone from reluctant family outsider to ruthless Mafia boss while chronicling the Corleones under the patriarch Vito.\n\nBased on Puzo's best-selling novel of the same name, The Godfather is widely regarded as one of the greatest films in world cinema[4]—and as one of the most influential, especially in the gangster genre.[5] Ranked second to Citizen Kane by the American Film Institute in 2007,[6] it was selected for preservation in the United States National Film Registry in 1990.\n\nThe film was for a time the highest grossing picture ever made, and remains the box office leader for 1972. It won three Oscars that year: Best Picture, Best Actor (Brando) and in the category Best Adapted Screenplay for Puzo and Coppola. Its nominations in seven other categories included Pacino, James Caan and Robert Duvall for Best Supporting Actor and Coppola for Best Director. The success spawned two sequels: The Godfather Part II in 1974, and The Godfather Part III in 1990.",
+        "photo": "the_godfather.jpg"
+    },
+    {
+        "id": 4,
+        "userId": 4,
+        "title": "Man On Fire",
+        "description": "Man on Fire is a 2004 American thriller film and the second adaptation of A. J. Quinnell's 1980 novel of the same name; the first film based on the novel was released in 1987. The 2004 film adaptation was directed by Tony Scott, from a screenplay written by Brian Helgeland.\n\nMan on Fire stars Denzel Washington as John Creasy, a despondent, alcoholic former CIA operative/Force Recon Marine officer turned bodyguard, who goes on a revenge rampage after his charge, nine-year-old Pita Ramos (Dakota Fanning), is abducted in Mexico City. The supporting cast includes Christopher Walken, Radha Mitchell, Giancarlo Giannini, Marc Anthony, Rachel Ticotin and Mickey Rourke.",
+        "photo": "man_on_fire.jpg"
+    },
+    {
+        "id": 5,
+        "userId": 5,
+        "title": "The Usual Suspects",
+        "description": "The Usual Suspects is a 1995 German-American neo-noir[3] crime thriller film directed by Bryan Singer and written by Christopher McQuarrie. It stars Stephen Baldwin, Gabriel Byrne, Benicio del Toro, Chazz Palminteri, Kevin Pollak, Pete Postlethwaite and Kevin Spacey.\n\nThe film follows the interrogation of Roger \"Verbal\" Kint, a small-time con man who is one of only two survivors of a massacre and fire on a ship docked at the Port of Los Angeles. He tells an interrogator a convoluted story about events that led him and four other criminals to the boat and of a mysterious mob boss known as Keyser Söze who commissioned their work. Using flashback and narration, Kint's story becomes increasingly complex.\n\nThe film, shot on a $6 million budget, began as a title taken from a column in Spy magazine called \"TheUsualSuspects\", after one of Claude Rains' most memorable lines in the classic film Casablanca. Singer thought it would make a good title for a film, the poster for which he and McQuarrie had developed as the first visual idea.\n\nThe film was shown out of competition at the 1995 Cannes Film Festival,[4] and then initially released in a few theaters. It received favorable reviews, and was eventually given a wider release. McQuarrie won an Academy Award for Best Writing (Original Screenplay) and Spacey won the Academy Award for Best Supporting Actor for his performance. In time, it is remembered for one of the most definitive and popular plot twists of all cinematic history.",
+        "photo": "the_usual_suspects.jpg"
+    }
+]

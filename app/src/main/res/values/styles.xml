@@ -1,0 +1,71 @@
+<resources>
+
+    <!-- BASE THEME START -->
+    <style name="Theme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/primary_accent</item>
+
+        <item name="android:textColorPrimary">@color/text_light</item>
+        <item name="android:windowBackground">@color/primary_background</item>
+    </style>
+    <!-- BASE THEME END -->
+
+    <!-- FONTS START -->
+    <style name="Base.Default.Button" parent="Base.TextAppearance.AppCompat.Button">
+        <item name="android:background">@drawable/primary_to_dark_button</item>
+        <item name="android:textColor">@color/text_light</item>
+    </style>
+
+    <style name="Base.Revert.Button" parent="Base.TextAppearance.AppCompat.Button">
+        <item name="android:background">@drawable/dark_to_primary_button</item>
+        <item name="android:textColor">@color/text_light</item>
+    </style>
+
+    <style name="Base.Caption" parent="Base.TextAppearance.AppCompat.Caption">
+        <item name="android:textColor">@color/text_dark</item>
+    </style>
+
+    <style name="Base.Body1" parent="Base.TextAppearance.AppCompat.Body1">
+        <item name="android:textColor">@color/text_normal</item>
+    </style>
+
+    <style name="Base.Body2" parent="Base.TextAppearance.AppCompat.Body2">
+        <item name="android:textColor">@color/text_dark</item>
+    </style>
+
+    <style name="Base.Subhead" parent="Base.TextAppearance.AppCompat.Subhead">
+        <item name="android:textColor">@color/text_normal</item>
+    </style>
+
+    <style name="Base.Title" parent="Base.TextAppearance.AppCompat.Title">
+        <item name="android:textColor">@color/text_light</item>
+    </style>
+
+    <style name="Base.Headline" parent="@style/Base.TextAppearance.AppCompat.Headline">
+        <item name="android:textColor">@color/text_dark</item>
+    </style>
+
+    <style name="Base.Headline.Card" parent="@style/Base.TextAppearance.AppCompat.Headline">
+        <item name="android:background">@color/black_transparent_54</item>
+        <item name="android:textColor">@color/text_light</item>
+    </style>
+
+    <style name="Base.Display1" parent="Base.TextAppearance.AppCompat.Display1">
+        <item name="android:textColor">@color/text_dark</item>
+    </style>
+
+    <style name="Base.Display2" parent="Base.TextAppearance.AppCompat.Display2">
+        <item name="android:textColor">@color/text_dark</item>
+    </style>
+
+    <style name="Base.Display3" parent="Base.TextAppearance.AppCompat.Display3">
+        <item name="android:textColor">@color/text_dark</item>
+    </style>
+
+    <style name="Base.Display4" parent="Base.TextAppearance.AppCompat.Display4">
+        <item name="android:textColor">@color/text_dark</item>
+    </style>
+    <!-- FONTS END -->
+
+</resources>
